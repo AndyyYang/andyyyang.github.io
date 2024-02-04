@@ -15,6 +15,19 @@
         <nav>
             <a href="index.html">Home</a>
         </nav>
+        <div id="welcome">
+        </div>
+        <script>
+          const welcome = document.querySelector("#welcome")
+          const hours = new Date().getHours()
+          let timeOfDay = ""
+        
+          if (hours >= 4 & hours < 12) timeOfDay = "It's morning"
+          else if (hours >= 12 && hours < 17) timeOfDay = "It's afternoon"
+          else if (hours >= 17 || hours < 4) timeOfDay = "It's evening"
+        
+          welcome.innerHTML = timeOfDay
+        </script>
             <h1>About Andy Yang</h1>
                  <p>
                      My name is Andy Yang, I will be a one year student after this spring. I attended UW-Oshkosh for a year in 2014 and FVTC back in 2017 for software development. I found 
